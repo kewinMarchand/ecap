@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta author="Kewin Marchand">
+
+        <title>ECAP Designer Web</title>
+
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <style>
+
+        </style>
+    </head>
+
+    <body id="page_top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="#">
+                <img src="afpa_logo.png" alt="Logo afpa">
+                <span class="font-weight-light align-bottom pl-2">ECAP Designer Web</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Connexion</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="my-5">
+            <h2 class="text-center">Évaluation des Compétences et des Acquis Professionnels</h2>
+        </header>
+
+        <form id="form" action="reponses.html" class="container">
+            <section id="infos" class="row">
+                <div class="form-group col-6">
+                    <label for="name">Votre nom</label>
+                    <input type="text" class="form-control" id="name" name=name placeholder="John Doe" autocomplete="name">
+                </div>
+                <div class="form-group col-6">
+                    <label for="email">Votre Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="john.doe@mail.com" autocomplete="email">
+                </div>
+            </section>
+            <div id="form_content"></div>
+            <footer id="footer" class="container my-5">
+                <button type="submit" class="btn btn-primary">Envoyer vos réponses</button>
+                
+            </footer>
+            <div id="display" class="container"></div>
+        </form>
+
+        <footer class="container-fluid bg-secondary d-flex justify-content-around align-items-center py-3">
+            <img src="afpa_logo.png" alt="Logo afpa">
+            <a href="#page_top">
+                <button>🡡</button>
+            </a>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="/node_modules/file-saver/FileSaver.js"></script>
+        <script src="requetes.js"></script>
+        <script src="createForm.js"></script>
+        <script src="postForm.js"></script>
+        <script>
+            /* 
+            To do : 
+                Vérifier les données
+                Ecrire les réponses dans reponses.json
+                Recuperer contenteditable
+                Insérer un bout de code ou une image sous une question
+             */       
+            $('.collapse').collapse()
+            request(readData);
+        </script>
+    </body>
+</html>
+
+<!--
+<code>
+    <form method=\"post\" action=\"transat_2017.php\">
+        <label for=\"nom\"></label>
+        <input type=\"text\" name=\"nom\" id=\"nom\">
+        <label for=\"courriel\"></label>
+        <input type=\"text\" name=\"courriel\" id=\"courriel\">
+        <label for=\"message\"></label>
+        <textarea name=\"message\" id=\"message\" cols="30" rows="10"></textarea>
+        <input type=\"submit\" name=\"envoyer\" id=\"envoyer\">
+    </form>
+</code>
+-->

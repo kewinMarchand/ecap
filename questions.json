@@ -1,0 +1,100 @@
+ {
+    "sections": [
+        {
+            "id": "conception", 
+            "title": "Concevoir un site ou une application web",
+            "subtitle": "M1 : Élaborer le design graphique d'un outil de communication numérique",
+            "quotes" : [
+                {
+                    "q": "A quoi sert le droit patrimonial dans la législation française des droits d'auteur ?"
+                },
+                {
+                    "q": "Selon vous, quelle sorte de typographie faut-il privilégier pour le texte sur écran ?"
+                },
+                {
+                    "q": "Avec quels logiciels réalisez-vous des zoning, des wireframes (mockups) et des maquettes de sites web ? À quelle étape et dans quel but les réalisez-vous ? Citez des exemples concrets."
+                }
+            ]
+        },
+        {
+            "id": "presentations", 
+            "title": "Réaliser des graphismes et des présentations vectorielles",
+            "subtitle": "M1 : Élaborer le design graphique d'un outil de communication numérique",
+            "quotes" : [
+                {
+                    "q": "Qu’est qui caractérise une image vectorielle ?"
+                },
+                {
+                    "q": "Vous devez construire une page web avec une image en arrière-plan et en premier plan une image comportant des zones semi-transparentes qui laisseront voir l'image d'arrière-plan : quel format d'image utilisez-vous ?"
+                },
+                {
+                    "q": "Comment faire pour vectoriser un logo dont vous ne possédez qu’une reproduction papier?"
+                }
+            ]
+        },
+        {
+            "id": "interfaces", 
+            "title": "Réaliser des maquettes et des interfaces",
+            "subtitle": "M1 : Élaborer le design graphique d'un outil de communication numérique",
+            "quotes" : [
+                {
+                    "q": "Quelles sont les différences entre les modes colorimétriques RVB et CMJN ?"
+                },
+                {
+                    "q": "Votre client vous demande de réaliser avec un logiciel de type Photoshop un visuel pour un site web qui servira aussi pour une impression en offset : quelle résolution d’image adoptez-vous ?"
+                },
+                {
+                    "q": "Pour réaliser un photomontage avec l’incrustation d’un personnage d’une image dans le décor d’une autre image, quels outils et démarche utilisez-vous ?"
+                }
+            ]
+        },
+        {
+            "id": "animations", 
+            "title": "Élaborer une animation pour différents supports de diffusion",
+            "subtitle": "M1 : Élaborer le design graphique d'un outil de communication numérique",
+            "quotes" : [
+                {
+                    "q": "Les professionnels évoquent souvent « les principes de base de l'animation », comme par exemple l'anticipation qui consiste à préparer le spectateur à une l'action pour en augmenter le réalisme. Quels autres principes de base de l’animation connaissez-vous ? Citez des exemples le cas échéant."
+                },
+                {
+                    "q": "Quels logiciels, langages et frameworks permettent de réaliser des animations 2D ?"
+                },
+                {
+                    "q": "Pour réaliser une animation avec un effet de parallaxe, comment procédez-vous ?"
+                }
+            ]
+        },
+        {
+            "id": "integrations", 
+            "title": "Intégrer des pages Web",
+            "subtitle": "M2 : Intégrer et publier des pages Web",
+            "quotes" : [
+                {
+                    "q": "Comment hiérarchiser le texte d’une page web ?"
+                },
+                {
+                    "q": "Vous avez besoin de donner une dimension précise à une balise HTML de lien : <a>, comment procédez-vous ?"
+                },
+                {
+                    "q": "Détaillez le code HTML de cette copie d’écran."
+                }
+            ]
+        },
+        {
+            "id": "publications", 
+            "title": "Publier des pages Web",
+            "subtitle": "M2 : Intégrer et publier des pages Web",
+            "quotes" : [
+                {
+                    "q": "Quels outils connaissez-vous pour tester, déboguer, valider le code des pages web ?"
+                },
+                {
+                    "q": "Quelles principales balises sont importantes pour le référencement naturel de vos pages web ?"
+                },
+                {
+                    "q": "Prenons la situation suivante : votre client a déposé en ligne, chez son hébergeur, un dossier qui contient des données confidentielles et il vous demande d’en bloquer le référencement : comment procédez-vous ?"
+                }
+            ]
+        }
+    ]
+}
