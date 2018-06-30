@@ -27,16 +27,28 @@ function saveFile(datas) {
     saveAs(file); 
 }
 
+$.fn.serializeFormJSON = function () {
+    let json = {},
+        a = this.serializeArray();
+
+    $.each(a, function () {
+        if (json[this.name]) {
+            if (!json[this.name].push) {
+                json[this.name] = [json[this.name]];
+            }
+            json[this.name].push(this.value || ' ');
+        } else {
+            json[this.name] = this.value || ' ';
+        }
+    });
+
+    return json;
+};
 
 form.submit(function(e) {
     e.preventDefault(); 
-    var formData = new FormData(form);
     let datas = $(this).serializeFormJSON();
-
-
     console.log(datas);
-    postRequest(datas);
-
     alertMessage(datas);
     writeDatas(datas);  
 
