@@ -25,8 +25,8 @@ function request(callback) {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
             // Données textuelles récupérées
-            let formGroups = JSON.parse(xhr.responseText);
-            callback(formGroups);   
+            let datas = JSON.parse(xhr.responseText);
+            callback(datas);   
         };           
     };    
     xhr.open("GET", "questions.json", true);
