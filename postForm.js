@@ -1,22 +1,24 @@
 
-let form = $("#form");
+let form = $("#form"),
+    display = $('#display');
 
+function alertMessage(datas) {
+    display.append(
+        '<p class="alert alert-success mt-5" role="alert">Merci' + datas.name + ', votre formulaire est bien enregistré</p>'
+    );
+}
 function writeDatas(datas) {
     i = 0;
-    $('#footer').append(
+    display.append(
         '<p>Votre nom: ' + datas.name + '</p>' +
         '<p>Votre email: ' + datas.email + '</p>' +
         '<h6>Vos réponses :</h6>'
     );
     for (i = 0; i < datas.reponses.length; i++) {
-        $('#footer').append(
-            '<p>Q' + (i + 1) + ' : ' + datas.reponses[i] + '</p>'
+        display.append(
+            '<p>Question n° ' + (i + 1) + ' : ' + datas.reponses[i] + '</p>'
         );
     };
-}
-
-function alertMessage() {
-    $('#footer').append('<p class="alert alert-success mt-5" role="alert">Votre formulaire est bien enregistré</p>');
 }
 
 function saveFile(datas) {  
@@ -35,9 +37,9 @@ form.submit(function(e) {
     console.log(datas);
     postRequest(datas);
 
-    alertMessage();
+    alertMessage(datas);
     writeDatas(datas);  
-    
+
     // document.location.href="reponses.html"
         
 });
