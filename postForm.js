@@ -37,7 +37,7 @@ form.submit(function(e) {
 
     alertMessage();
     writeDatas(datas);  
-    postRequest(datas);
-    document.location.href="reponses.html"
+    
+    // document.location.href="reponses.html"
         
 });

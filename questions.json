@@ -95,6 +95,137 @@
                     "q": "Prenons la situation suivante : votre client a déposé en ligne, chez son hébergeur, un dossier qui contient des données confidentielles et il vous demande d’en bloquer le référencement : comment procédez-vous ?"
                 }
             ]
+        },
+        {
+            "id": "javascript", 
+            "title": "Intégrer des contenus interactifs et dynamiques dans un site Web",
+            "subtitle": "M3 : Intégrer des contenus interactifs et dynamiques dans un site Web",
+            "quotes" : [
+                {
+                    "q": "Commentez le fragment de code suivant : $('p').slideDown().delay(1000).fadeTo('fast',0.5);"
+                },
+                {
+                    "q": "Examinez ce code JavaScript et commentez-le en indiquant à quoi servent les différents éléments du code."
+                },
+                {
+                    "q": "Vous devez adapter ce script : proposez les modifications nécessaires pour que les photos qui se trouvent dans le répertoire « images » s’affichent dans un élément dont l’id est « galerie »"
+                }
+            ]
+        },
+        {
+            "id": "php", 
+            "title": "Intégrer des contenus interactifs et dynamiques côté serveur",
+            "subtitle": "M3 : Intégrer des contenus interactifs et dynamiques dans un site Web",
+            "quotes" : [
+                {
+                    "q": "Que signifie l’abréviation PHP et à quoi sert ce langage ?"
+                },
+                {
+                    "q": "Quel est le principe de fonctionnement d’un outil comme WAMP ou MAMP ?"
+                },
+                {
+                    "q": "Le développeur vous demande d’adapter un script PHP de connexion vers une base de données MySQL pour une nouvelle base de données : quelles informations avez-vous besoin de modifier ?"
+                }
+            ]
+        },
+        {
+            "id": "configurer_cms", 
+            "title": "Configurer et adapter un CMS pour réaliser un site Web",
+            "subtitle": "M4 : Concevoir des sites Web avec des systèmes de gestion de contenu (CMS)",
+            "quotes" : [
+                {
+                    "q": "Que sont les CMS ?"
+                },
+                {
+                    "q": "Citez les CMS les plus populaires, dont des CMS spécifiques au e-commerce."
+                },
+                {
+                    "q": "Comment procédez-vous pour installer un CMS sur votre ordinateur, en local, quels éléments sont indispensables ?"
+                }
+            ]
+        },
+        {
+            "id": "personnaliser_cms", 
+            "title": "Réaliser un site Web personnalisé avec un CMS, à partir d’un cahier des charges",
+            "subtitle": "M4 : Concevoir des sites Web avec des systèmes de gestion de contenu (CMS)",
+            "quotes" : [
+                {
+                    "q": "Comment peut-on personnaliser un CMS pour un client ?"
+                },
+                {
+                    "q": "Qu’est-ce que le codex WordPress ?"
+                },
+                {
+                    "q": "Vous réalisez un site pour un client à partir d’un CMS : quelles vont être les étapes de votre projet ? Appuyez-vous sur un exemple."
+                }
+            ]
+        },
+        {
+            "id": "veille", 
+            "title": "Assurer une veille technique et concurrentielle",
+            "subtitle": "M5 : Contribuer à la gestion et au suivi d'un projet de communication numérique",
+            "quotes" : [
+                {
+                    "q": "Citez différentes sources, outils ou moyens pour mener et automatiser votre veille technologique."
+                },
+                {
+                    "q": "Quels sont les points d’attention pour vérifier la fiabilité des informations dans votre activité de veille ?"
+                },
+                {
+                    "q": "Comment et avec quels moyens développez-vous un réseau de contacts professionnels avec les référents du secteur ?"
+                }
+            ]
+        },
+        {
+            "id": "cahier_charges", 
+            "title": "Contribuer à l'élaboration d'un cahier des charges pour différents types de sites",
+            "subtitle": "M5 : Contribuer à la gestion et au suivi d'un projet de communication numérique",
+            "quotes" : [
+                {
+                    "q": "Quels sont les principaux éléments abordés dans le cahier des charges d’un site ?"
+                },
+                {
+                    "q": "Citez des aspects législatifs importants dans la réalisation d’un site web."
+                },
+                {
+                    "q": "Un client vous demande conseil pour le choix de son nom de domaine, à partir de quels critères le conseillez-vous ?"
+                }
+            ]
+        },
+        {
+            "id": "optimiser", 
+            "title": "Optimiser en continu un site ou une application Web",
+            "subtitle": "M5 : Contribuer à la gestion et au suivi d'un projet de communication numérique",
+            "quotes" : [
+                {
+                    "q": "À quoi êtes-vous attentifs pour concevoir et réaliser des newsletters ?"
+                },
+                {
+                    "q": "Quelles actions menez-vous pour améliorer le référencement naturel (SEO) ?"
+                },
+                {
+                    "q": "Comment pouvez-vous utiliser les réseaux sociaux pour développer l'audience ?"
+                }
+            ]
+        },
+        {
+            "id": "realiser_promotion", 
+            "title": "Réaliser des outils de communication ou de promotion",
+            "subtitle": "M5 : Contribuer à la gestion et au suivi d'un projet de communication numérique",
+            "quotes" : [
+                {
+                    "q": "Vous voulez préparer un fichier pour une impression offset en quadrichromie : à quoi devez-vous être attentif avant d’envoyer le fichier chez l’imprimeur ?"
+                },
+                {
+                    "q": "Complétez la légendes du schéma en renseignant les couleurs qui manquent."
+                },
+                {
+                    "q": "Complétez la légendes du schéma en renseignant les couleurs qui manquent."
+                },
+                {
+                    "q": "Comment procéder pour intégrer des vidéos compatibles avec les différents navigateurs ?"
+                }
+            ]
         }
     ]
 }
