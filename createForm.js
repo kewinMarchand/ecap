@@ -28,7 +28,7 @@ function createQuotes(datas) {
     );
 };
 
-function readData(sData) {
+function readData(datas) {
     if (datas) {  
         for (i = 0; i < datas.sections.length; i++) {
             createHeader(datas);
