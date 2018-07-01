@@ -41,6 +41,378 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "gestion", 
+            "title": "Gestion de projets",
+            "quotes" : [
+                {
+                    "q": "Quel document utilisé pour exprimer le style choisi dans le cadre du développement d’une idée créative est un assemblage d’images, d’objets ou de mots ?",
+                    "options": [
+                        { 
+                            "o": "Un motherboard"
+                        },
+                        { 
+                            "o": "Un moodboard"
+                        },
+                        { 
+                            "o": "un mountainboard"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quel document est un schéma utilisé lors de la conception d'une interface pour définir les zones et composants qu'elle doit contenir ?",
+                    "options": [
+                        { 
+                            "o": "Un wireframe"
+                        },
+                        { 
+                            "o": "Un UI kit"
+                        },
+                        { 
+                            "o": "Un framework"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quel document sert à formaliser les besoins d'un projet et à les expliquer aux différents acteurs ?",
+                    "options": [
+                        { 
+                            "o": "Un cahier des charges"
+                        },
+                        { 
+                            "o": "Un tutoriel"
+                        },
+                        { 
+                            "o": "Une charte éditoriale"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Graphisme", 
+            "title": "Graphisme",
+            "quotes" : [
+                {
+                    "q": "Quel logiciel est le plus adapté à la création / modification d'une Image vectorielle ?",
+                    "options": [
+                        { 
+                            "o": "Photoshop"
+                        },
+                        { 
+                            "o": "Illustrator"
+                        },
+                        { 
+                            "o": "InDesign"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle unité de base permet de mesurer la définition d'une image numérique matricielle ?",
+                    "options": [
+                        { 
+                            "o": "L'octet"
+                        },
+                        { 
+                            "o": "Le millimètre"
+                        },
+                        { 
+                            "o": "Le pixel"
+                        },
+                        { 
+                            "o": "Le point"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quel format de fichier sera le plus adapté si vous devez mettre un logo dans une page web ?",
+                    "options": [
+                        { 
+                            "o": ".svg"
+                        },
+                        { 
+                            "o": ".jpeg"
+                        },
+                        { 
+                            "o": ".gif"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "HTML", 
+            "title": "HTML",
+            "quotes" : [
+                {
+                    "q": "Quel attribut HTML est unique ?",
+                    "options": [
+                        { 
+                            "o": "L'attribut Id"
+                        },
+                        { 
+                            "o": "L'attribut classe"
+                        },
+                        { 
+                            "o": "L'attribut alt"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle balise définit un lien entre un document et une feuille de style externe ?",
+                    "options": [
+                        { 
+                            "o": "La balise &lt;link&gt;"
+                        },
+                        { 
+                            "o": "La balise &lt;meta&gt;"
+                        },
+                        { 
+                            "o": "La balise &lt;map&gt;"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle balisage permet de créer un commentaire en HTML ?",
+                    "options": [
+                        { 
+                            "o": "&lt;!-- commentaire --&gt;"
+                        },
+                        { 
+                            "o": "// commentaire"
+                        },
+                        { 
+                            "o": "/* commentaire */"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "CSS", 
+            "title": "CSS",
+            "quotes" : [
+                {
+                    "q": "Quelle déclaration CSS permet de colorer en rouge un lien qui est survolé ?",
+                    "options": [
+                        { 
+                            "o": "a:visited {color: #FF0000;}"
+                        },
+                        { 
+                            "o": "a:hover {color: #FF0000;}"
+                        },
+                        { 
+                            "o": "a:active {color: #FF0000;}"
+                        }
+                    ]
+                },
+                {
+                    "q": "Un framework CSS est un ensemble de déclarations CSS réutilisables facilement.",
+                    "options": [
+                        { 
+                            "o": "Vrai"
+                        },
+                        { 
+                            "o": "Faux"
+                        }
+                    ]
+                },
+                {
+                    "q": "Le sélecteur 'img[title~=mockup]' permet de sélectionner toutes les images ayant un attribut 'title' contenant le mot 'mockup'.",
+                    "options": [
+                        { 
+                            "o": "Vrai"
+                        },
+                        { 
+                            "o": "Faux"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "Javascript", 
+            "title": "Javascript",
+            "quotes" : [
+                {
+                    "q": "Quelle est la syntaxe correcte pour faire référence à un script externe appelé 'script.js' ?",
+                    "options": [
+                        { 
+                            "o": "&lt;script src='script.js'&gt;"
+                        },
+                        { 
+                            "o": "&lt;script name='script.js'&gt;"
+                        },
+                        { 
+                            "o": "&lt;script href='script.js'&gt;"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle est la syntaxe JavaScript correcte pour modifier le contenu de l'élément HTML suivant '&lt;p id='demo'&gt;Bla bla bla.&lt;/p&gt;' ?",
+                    "options": [
+                        { 
+                            "o": "document.getElementByName ('p').innerHTML = 'Bonjour tout le monde!'."
+                        },
+                        { 
+                            "o": "document.getElementById ('demo').innerHTML = 'Bonjour tout le monde!'."
+                        },
+                        { 
+                            "o": "document.getElement ('p').innerHTML = 'Bonjour tout le monde!'."
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle est la bonne façon de créer une fonction JavaScript ?",
+                    "options": [
+                        { 
+                            "o": "function myFunction ()"
+                        },
+                        { 
+                            "o": "function: myFunction ()"
+                        },
+                        { 
+                            "o": "= function myFunction ()"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "PHP", 
+            "title": "PHP",
+            "quotes" : [
+                {
+                    "q": "Quelle variable superglobale représente un tableau associatif des valeurs passées au script courant via les paramètres d'URL ?",
+                    "options": [
+                        { 
+                            "o": "$_ENV"
+                        },
+                        { 
+                            "o": "$_POST"
+                        },
+                        { 
+                            "o": "$_GET"
+                        },
+                        { 
+                            "o": "$_SESSION"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle fonction convertit les caractères spéciaux en entités HTML ?",
+                    "options": [
+                        { 
+                            "o": "htmlspecialchars()"
+                        },
+                        { 
+                            "o": "printf()"
+                        },
+                        { 
+                            "o": "levenshtein()"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle fonction permet de créer une clé de hachage pour un mot de passe ?",
+                    "options": [
+                        { 
+                            "o": "password_get_info()"
+                        },
+                        { 
+                            "o": "password_hash()"
+                        },
+                        { 
+                            "o": "password_verify()"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "SQL", 
+            "title": "SQL",
+            "quotes" : [
+                {
+                    "q": "L'instruction SQL 'SELECT Country FROM Customers;'",
+                    "options": [
+                        { 
+                            "o": "Sélectionne les valeurs de la colonne 'Country'"
+                        },
+                        { 
+                            "o": "Sélectionne les valeurs de la colonne 'Customers'"
+                        }
+                    ]
+                },
+                {
+                    "q": "L'instruction SQL 'SELECT * FROM Customers;' sélectionne toutes les colonnes de la table 'Customers'.",
+                    "options": [
+                        { 
+                            "o": "Vrai"
+                        },
+                        { 
+                            "o": "Faux"
+                        }
+                    ]
+                },
+                {
+                    "q": "L'instruction SQL 'SELECT * FROM Designers WHERE Country='France' OR City = 'Paris';'",
+                    "options": [
+                        { 
+                            "o": "Sélectionne tous les designers du pays 'France' et de la ville de Paris dans la table 'Designers'"
+                        },
+                        { 
+                            "o": "Sélectionne tous les designers du pays 'France' ou de la ville de Paris dans la table 'Designers'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "CMS", 
+            "title": "CMS",
+            "quotes" : [
+                {
+                    "q": "Que signifie l'acronyme CMS ?",
+                    "options": [
+                        { 
+                            "o": "Content Management System"
+                        },
+                        { 
+                            "o": "Category Multiple Sort"
+                        },
+                        { 
+                            "o": "Custom Minify Script"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quel est le CMS le plus utilisé dans le monde ?",
+                    "options": [
+                        { 
+                            "o": "Drupal"
+                        },
+                        { 
+                            "o": "Prestashop"
+                        },
+                        { 
+                            "o": "Wordpress"
+                        }
+                    ]
+                },
+                {
+                    "q": "Comment s'appelle le dossier comprenant les fichiers de code et éventuellement les images donnant l'apparence à un site web ?",
+                    "options": [
+                        { 
+                            "o": "Un thème"
+                        },
+                        { 
+                            "o": "Une extension"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -84,6 +84,10 @@
                     return false;
                 });
             });
+            
+            let i, j, o,
+                form = $("#form"),
+                display = $('#display');
 
             function getXMLHttpRequest() {
                 let xhr = null;
@@ -107,57 +111,17 @@
             }
 
             function request(callback) {
-                // Instancie l'objet XHR
                 let xhr = getXMLHttpRequest();    
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-                        // Données textuelles récupérées
                         let datas = JSON.parse(xhr.responseText);
-                        callback(datas);   
+                        callback(datas); 
                     };           
                 };    
                 xhr.open("GET", "test.json", true);
                 xhr.send(null);
             }  
             
-            request(readData);
-
-            let i,
-                j,
-                o;
-
-            function createHeader(datas) {
-                $('#form_content').append(
-                    '<section id="' + datas.sections[i].id + '" class="form-header">' +
-                        '<header class="bg-secondary p-4 my-5 text-center text-white">' +
-                            '<h3>' + datas.sections[i].title + '</h3>' +
-                        '</header>' +
-                    '</section>'
-                );
-            };
-
-            function createQuotes(datas) {
-                $('#form_content').append(
-                    '<div id="accordion' + datas.sections[i].id + j +'" class="question container my-5">' +
-                        '<header class="row">' +
-                            '<h5 class="col-11" contenteditable>' + datas.sections[i].quotes[j].q + '</h5>' +
-                            '<button type="button" class="btn btn-link" data-target="#collapse' + datas.sections[i].id + j +'"  data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">↕</button>' +
-                        '</header>' +
-                        '<div id="collapse' + datas.sections[i].id + j + '" class="collapse show"  data-parent="#accordion' + datas.sections[i].id + j +'">' +
-                        '</div>' +
-                    '</div>'
-                );
-            };
-
-            function createOptions(datas) {
-                $('#collapse' + datas.sections[i].id + j ).append(
-                    '<div class="form-check form-check-inline">' +
-                        '<input class="form-check-input" type="checkbox" id="inlineCheckbox'+ datas.sections[i].quotes[j].options[o] + '" value="option'+ datas.sections[i].quotes[j].options[o] + '">' +
-                        '<label class="form-check-label" for="inlineCheckbox1">' + datas.sections[i].quotes[j].options[o] + '</label>' +
-                    '</div>'
-                )
-            }
-
             function readData(datas) {
                 if (datas) {  
                     for (i = 0; i < datas.sections.length; i++) {
@@ -174,14 +138,52 @@
                 }
             }
 
-            let form = $("#form"),
-                display = $('#display');
+            request(readData);
+
+            
+
+            function createHeader(datas) {
+                $('#form_content').append(
+                    '<section id="' + datas.sections[i].id + '" class="form-header">' +
+                        '<header class="bg-secondary p-4 my-5 text-center text-white">' +
+                            '<h3>' + datas.sections[i].title + '</h3>' +
+                        '</header>' +
+                    '</section>'
+                );
+            };
+
+            function createQuotes(datas) {
+                $('#form_content').append(
+                    '<div id="accordion_' + datas.sections[i].id + j +'" class="question container my-5">' +
+                        '<header class="row">' +
+                            '<h5 class="col-11" contenteditable>' + datas.sections[i].quotes[j].q + '</h5>' +
+                            '<button type="button" class="btn btn-link" data-target="#collapse_' + datas.sections[i].id + j +'"  data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">↕</button>' +
+                        '</header>' +
+                        '<div id="collapse_' + datas.sections[i].id + j + '" class="collapse show"  data-parent="#accordion_' + datas.sections[i].id + j +'">' +
+                        '</div>' +
+                    '</div>'
+                );
+            };
+
+            function createOptions(datas) {
+                $('#collapse_' + datas.sections[i].id + j ).append(
+                    '<div class="form-check">' +
+                        '<input class="form-check-input" type="radio" name="radios" id="radio_'+ j + o + '" value="">' +
+                        '<label class="form-check-label" for="radio_'+ j + o + '">' + datas.sections[i].quotes[j].options[o].o + '</label>' +
+                    '</div>' 
+                )
+            }
+
+            
+            
+            
 
             function alertMessage(datas) {
                 display.append(
                     '<p class="alert alert-success mt-5" role="alert">Merci ' + datas.name + ', votre formulaire est bien enregistré</p>'
                 );
             }
+
             function writeDatas(datas) {
                 i = 0;
                 display.append(
@@ -189,9 +191,9 @@
                     '<p>Votre email: ' + datas.email + '</p>' +
                     '<h6>Vos réponses :</h6>'
                 );
-                for (i = 0; i < datas.reponses.length; i++) {
+                for (i = 0; i < datas.radios.length; i++) {
                     display.append(
-                        '<p>Question n° ' + (i + 1) + ' : ' + datas.reponses[i] + '</p>'
+                        '<p>Question n° ' + (i + 1) + ' : ' + datas.radios[i] + '</p>'
                     );
                 };
             }
@@ -219,6 +221,8 @@
 
                 return json;
             };
+            
+            
 
             form.submit(function(e) {
                 e.preventDefault(); 

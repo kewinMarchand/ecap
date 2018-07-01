@@ -19,6 +19,9 @@ function writeDatas(datas) {
             '<p>Question n° ' + (i + 1) + ' : ' + datas.reponses[i] + '</p>'
         );
     };
+    display.append(
+        '<button id="download" type="submit" class="btn btn-primary my-5">Téléchargez vos réponses</button>'
+    );
 }
 
 function saveFile(datas) {  
@@ -53,5 +56,11 @@ form.submit(function(e) {
     writeDatas(datas);  
 
     // document.location.href="reponses.html"
+    $('#download').on("click", function() {
+        e.preventDefault(); 
+        saveFile(datas);
+    })
         
 });
+
+

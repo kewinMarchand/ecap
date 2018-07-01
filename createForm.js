@@ -22,7 +22,7 @@ function createQuotes(datas) {
            '</header>' +
             '<div id="collapse' + datas.sections[i].id + j + '" class="collapse show"  data-parent="#accordion' + datas.sections[i].id + j +'">' +
                 '<label for="Q' + i + '">Votre réponse</label>' +
-                '<textarea class="form-control" id="Q' + i + '" name="reponses' + '" rows="5" placeholder="..."></textarea>' +
+                '<textarea class="form-control" id="Q' + i + '" name="reponses" rows="5" placeholder="..."></textarea>' +
             '</div>' +
         '</div>'
     );
