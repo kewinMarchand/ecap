@@ -1,0 +1,46 @@
+{
+    "sections": [
+        {
+            "id": "web", 
+            "title": "Le web",
+            "quotes" : [
+                {
+                    "q": "Quelle notation sert à retenir et communiquer facilement l'adresse d'un ensemble de serveurs ?",
+                    "options": [
+                        { 
+                            "o": "Le nom de domaine"
+                        },
+                        { 
+                            "o": "L'adresse Ip"
+                        }
+                    ]
+                },
+                {
+                    "q": "Quelle entité a pour vocation de mettre à disposition des internautes des sites web conçus et gérés par des tiers ?",
+                    "options": [
+                        { 
+                            "o": "Un hébergeur web"
+                        },
+                        { 
+                            "o": "La CNIL"
+                        }
+                    ]
+                },
+                {
+                    "q": "Comment s'appelle l'ensemble de techniques visant à optimiser la visibilité d'une page web dans les pages de résultats de recherche ?",
+                    "options": [
+                        { 
+                            "o": "LE SEA"
+                        },
+                        { 
+                            "o": "Le SMO"
+                        },
+                        { 
+                            "o": "Le SEO"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
