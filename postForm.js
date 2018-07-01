@@ -4,7 +4,7 @@ let form = $("#form"),
 
 function alertMessage(datas) {
     display.append(
-        '<p class="alert alert-success mt-5" role="alert">Merci' + datas.name + ', votre formulaire est bien enregistré</p>'
+        '<p class="alert alert-success mt-5" role="alert">Merci ' + datas.name + ', votre formulaire est bien enregistré</p>'
     );
 }
 function writeDatas(datas) {

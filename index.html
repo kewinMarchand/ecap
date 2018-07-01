@@ -61,7 +61,7 @@
 
         <footer id="footer" class="container-fluid bg-secondary d-flex justify-content-around align-items-center py-3">
             <img src="images/afpa_logo.png" alt="Logo afpa">
-            <a href="#page_top">
+            <a href="#page_top" class="scrollTo">
                 <button>🡡</button>
             </a>
         </footer>
@@ -74,15 +74,35 @@
         <script src="createForm.js"></script>
         <script src="postForm.js"></script>
         <script>
+
+
+
+
+
             /* 
             To do : 
                 Vérifier les données
                 Ecrire les réponses dans reponses.json
                 Recuperer contenteditable
                 Insérer un bout de code ou une image sous une question
-             */       
-            // $('.collapse').collapse()
+             */ 
+            
+             
+
+
+
+             $(document).ready(function() {
+                $('.scrollTo').on('click', function() {
+                    var page = $(this).attr('href');
+                    var speed = 750;
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+                    return false;
+                });
+                // $('.collapse').collapse()
+            });
+            
             request(readData);
+            
         </script>
     </body>
 </html>
